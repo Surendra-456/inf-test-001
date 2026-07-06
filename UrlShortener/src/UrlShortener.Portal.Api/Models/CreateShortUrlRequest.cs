@@ -1,0 +1,6 @@
+ namespace UrlShortener.Portal.Api.Models;
+
+public class CreateShortUrlRequest
+{
+    public string OriginalUrl { get; set; }= string.Empty;
+}

@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "UrlShortener.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/UrlShortener.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UrlShortener.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UrlShortener.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UrlShortener.Domain/UrlShortener.Domain.csproj",
+      "msbuildProject": "../UrlShortener.Domain/UrlShortener.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "UrlShortener.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\snishad\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Test\\inf-test-001\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj",
+      "projectName": "UrlShortener.Application",
+      "projectPath": "C:\\Test\\inf-test-001\\UrlShortener\\src\\UrlShortener.Application\\UrlShortener.Application.csproj",
+      "packagesPath": "C:\\Users\\snishad\\.nuget\\packages\\",
+      "outputPath": "C:\\Test\\inf-test-001\\UrlShortener\\src\\UrlShortener.Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\snishad\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Test\\inf-test-001\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj": {
+              "projectPath": "C:\\Test\\inf-test-001\\UrlShortener\\src\\UrlShortener.Domain\\UrlShortener.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.422/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

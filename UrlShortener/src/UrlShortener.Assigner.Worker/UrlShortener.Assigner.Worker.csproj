@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-UrlShortener.Assigner.Worker-a06335ef-8e52-4eee-b0f1-2135b63f211f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka.Cluster" Version="1.5.69" />
+    <PackageReference Include="Akka.Cluster.Hosting" Version="1.5.69" />
+    <PackageReference Include="Akka.Hosting" Version="1.5.69" />
+    <PackageReference Include="Akka.Remote" Version="1.5.69" />
+    <PackageReference Include="Akka.Remote.Hosting" Version="1.5.69" />
+
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UrlShortener.Application\UrlShortener.Application.csproj" />
+    <ProjectReference Include="..\UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj" />
+    <ProjectReference Include="..\UrlShortener.Contracts\UrlShortener.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+﻿@model UrlShortener.Forward.Mvc.Models.ForwardViewModel
+
+@{
+    ViewData["Title"] = "Forward URL";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2 class="text-center mb-4">
+                        URL Forwarder
+                    </h2>
+
+                    Index
+                    <form>
+                        <div class="mb-3">
+
+                            <label asp-for="ShortUrl" class="form-label">
+                                Short URL Code
+                            </label>
+
+                            <input asp-for="ShortUrl" class="form-control"/>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">
+                            Go
+                        </button>
+
+                    </form>
+
+                    <div asp-validation-summary="All"
+                         class="text-danger mt-3">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

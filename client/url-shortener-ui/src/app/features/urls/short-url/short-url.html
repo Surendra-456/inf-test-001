@@ -1,0 +1,15 @@
+<div class="container mt-3">
+  <form [formGroup]="form" (ngSubmit)="create()">
+
+    <div class="mb-3">
+      <label for="originalUrl" class="form-label">Original URL</label>
+      <input id="originalUrl" type="text" class="form-control" formControlName="originalUrl"
+        placeholder="https://test.com">
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
+      Create
+    </button>
+
+  </form>
+</div>
