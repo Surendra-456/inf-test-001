@@ -11,10 +11,10 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.AssemblyInfoInputs.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.AssemblyInfo.cs
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShort.41F6DB00.Up2Date
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\refint\UrlShortener.Infrastructure.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.genruntimeconfig.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\ref\UrlShortener.Infrastructure.dll
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Infrastructure\obj\Debug\net8.0\UrlShortener.Infrastructure.sourcelink.json

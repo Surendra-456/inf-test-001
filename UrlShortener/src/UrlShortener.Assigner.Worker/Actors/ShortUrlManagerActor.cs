@@ -1,4 +1,5 @@
 using Akka.Actor;
+using Microsoft.Extensions.DependencyInjection;
 using UrlShortener.Application.Interfaces;
 using UrlShortener.Contracts.Messages;
 using UrlShortener.Domain.Entities;
@@ -7,28 +8,35 @@ namespace UrlShortener.Assigner.Worker.Actors;
 
 public class ShortUrlManagerActor : ReceiveActor
 {
-    private readonly IShortUrlRepository _repository;
+    private readonly IServiceScopeFactory _scopeFactory;
 
-    public ShortUrlManagerActor(IShortUrlRepository repository)
+    public ShortUrlManagerActor(IServiceScopeFactory scopeFactory)
     {
-        _repository = repository;
+        _scopeFactory = scopeFactory;
+
         ReceiveAsync<CreateShortUrlMessage>(CreateShortUrlAsync);
     }
 
     private async Task CreateShortUrlAsync(CreateShortUrlMessage message)
     {
+        using var scope = _scopeFactory.CreateScope();
+
+        var repository =
+            scope.ServiceProvider.GetRequiredService<IShortUrlRepository>();
+
         var code = GenerateCode();
 
-        var shortUrl =$"http://localhost:5002/s/{code}";
+        var shortUrl = $"http://yts/{code}";
 
-        await _repository.AddAsync(
+        await repository.AddAsync(
             new ShortUrl(
                 code,
                 message.OriginalUrl,
                 message.UserId),
             CancellationToken.None);
 
-        Sender.Tell(new ShortUrlCreatedMessage(shortUrl));
+        Sender.Tell(
+            new ShortUrlCreatedMessage(shortUrl));
     }
 
     private static string GenerateCode()

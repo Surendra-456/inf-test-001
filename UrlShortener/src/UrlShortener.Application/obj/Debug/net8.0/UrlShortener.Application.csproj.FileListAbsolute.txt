@@ -8,9 +8,9 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.AssemblyInfoInputs.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.AssemblyInfo.cs
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.csproj.CoreCompileInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShort.95A5A48A.Up2Date
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\refint\UrlShortener.Application.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\ref\UrlShortener.Application.dll
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Application\obj\Debug\net8.0\UrlShortener.Application.sourcelink.json

@@ -2,9 +2,9 @@ namespace UrlShortener.Contracts;
 
 public static class ActorNames
 {
-    public const string UrlManager = "url-manager";
+    public const string UrlManager = "ShortUrlManagerActor";
 
-    public const string UrlLookup = "url-lookup";
+    public const string UrlLookup = "UrlLookupActor";
 
-    public const string Portal = "portal";
+    public const string Portal = "PortalActor";
 }

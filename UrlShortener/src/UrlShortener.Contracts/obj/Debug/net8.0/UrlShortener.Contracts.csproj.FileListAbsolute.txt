@@ -5,8 +5,8 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\Ur
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.AssemblyInfoInputs.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.AssemblyInfo.cs
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.csproj.CoreCompileInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\refint\UrlShortener.Contracts.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\ref\UrlShortener.Contracts.dll
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Contracts\obj\Debug\net8.0\UrlShortener.Contracts.sourcelink.json

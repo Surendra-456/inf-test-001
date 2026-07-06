@@ -1,3 +1,9 @@
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.csproj.AssemblyReference.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.AssemblyInfoInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.AssemblyInfo.cs
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.csproj.CoreCompileInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\appsettings.Development.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\appsettings.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\UrlShortener.Assigner.Worker.exe
@@ -225,15 +231,9 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\UrlShortener.Infrastructure.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\UrlShortener.Contracts.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\bin\Debug\net8.0\UrlShortener.Domain.pdb
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.csproj.AssemblyReference.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.GeneratedMSBuildEditorConfig.editorconfig
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.AssemblyInfoInputs.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.AssemblyInfo.cs
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.csproj.CoreCompileInputs.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShort.DDAEF0E4.Up2Date
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\refint\UrlShortener.Assigner.Worker.dll
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.genruntimeconfig.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\ref\UrlShortener.Assigner.Worker.dll
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Assigner.Worker\obj\Debug\net8.0\UrlShortener.Assigner.Worker.sourcelink.json

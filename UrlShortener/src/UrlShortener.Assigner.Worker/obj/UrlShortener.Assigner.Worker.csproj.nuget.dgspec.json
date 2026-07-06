@@ -123,6 +123,10 @@
               "target": "Package",
               "version": "[1.5.69, )"
             },
+            "Akka.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.5.69, )"
+            },
             "Akka.Hosting": {
               "target": "Package",
               "version": "[1.5.69, )"

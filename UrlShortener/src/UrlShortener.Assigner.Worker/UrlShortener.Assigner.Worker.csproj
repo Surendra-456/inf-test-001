@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Akka.Cluster" Version="1.5.69" />
     <PackageReference Include="Akka.Cluster.Hosting" Version="1.5.69" />
+    <PackageReference Include="Akka.DependencyInjection" Version="1.5.69" />
     <PackageReference Include="Akka.Hosting" Version="1.5.69" />
     <PackageReference Include="Akka.Remote" Version="1.5.69" />
     <PackageReference Include="Akka.Remote.Hosting" Version="1.5.69" />

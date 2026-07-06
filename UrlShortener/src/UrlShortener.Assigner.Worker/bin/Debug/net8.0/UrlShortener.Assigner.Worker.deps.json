@@ -10,6 +10,7 @@
         "dependencies": {
           "Akka.Cluster": "1.5.69",
           "Akka.Cluster.Hosting": "1.5.69",
+          "Akka.DependencyInjection": "1.5.69",
           "Akka.Hosting": "1.5.69",
           "Akka.Remote": "1.5.69",
           "Akka.Remote.Hosting": "1.5.69",

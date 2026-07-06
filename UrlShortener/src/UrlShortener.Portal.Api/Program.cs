@@ -1,18 +1,15 @@
+using Akka.Actor;
 using Akka.Cluster.Hosting;
 using Akka.Hosting;
 using Akka.Remote.Hosting;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using UrlShortener.Application.Interfaces;
-using UrlShortener.Infrastructure.Persistence;
-using UrlShortener.Infrastructure.Repositories;
-using UrlShortener.Infrastructure.Services;
+using UrlShortener.Contracts;
 using UrlShortener.Infrastructure;
+using UrlShortener.Infrastructure.Services;
 using UrlShortener.Portal.Api.Actors;
-using Akka.Actor;
-
+using UrlShortener.Application.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,9 +18,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// builder.Services.AddDbContext<UrlShortenerDbContext>(options =>
-//     options.UseSqlServer(
-//         builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddInfrastructure(
     builder.Configuration.GetConnectionString("DefaultConnection")!);
 
@@ -34,7 +28,9 @@ builder.Services.AddAkka(
     akka =>
     {
         akka
-            .WithRemoting("localhost", 8111)
+            .WithRemoting(
+                "localhost",
+                8111)
             .WithClustering(
                 new ClusterOptions
                 {
@@ -47,33 +43,14 @@ builder.Services.AddAkka(
 
         akka.WithActors((system, registry) =>
         {
-            var actor =
+            var portalActor =
                 system.ActorOf(
-                    Props.Create(() =>
-                        new PortalActor(ActorRefs.Nobody)),
-                    "portal");
+                    Props.Create(() => new PortalActor()),
+                    ActorNames.Portal);
 
-            registry.Register<PortalActor>(
-                actor);
+            registry.Register<PortalActor>(portalActor);
         });
     });
-
-// builder.Services.AddAkka(
-//     "UrlShortenerSystem",
-//     akka =>
-//     {
-//         akka
-//             .WithRemoting("localhost", 8111)
-//             .WithClustering(
-//                 new ClusterOptions
-//                 {
-//                     Roles = ["portal"],
-//                     SeedNodes =
-//                     [
-//                         "akka.tcp://UrlShortenerSystem@localhost:8110"
-//                     ]
-//                 });
-//     });
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -95,7 +72,6 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
-// CORS
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Angular", policy =>

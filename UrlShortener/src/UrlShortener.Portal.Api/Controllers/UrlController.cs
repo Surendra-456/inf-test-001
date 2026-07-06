@@ -8,6 +8,7 @@ using UrlShortener.Contracts.Messages;
 using Microsoft.AspNetCore.Authorization;
 using System.Linq;
 using Akka.Actor;
+using UrlShortener.Contracts;
 
 [Authorize]
 [ApiController]
@@ -26,8 +27,7 @@ public class UrlController : ControllerBase
     public async Task<IActionResult> AddShortUrl(CreateShortUrlRequest request)
     {        
       
-     var portalActor =_actorSystem.ActorSelection("/user/portal");
-
+     var portalActor =_actorSystem.ActorSelection($"/user/{ActorNames.Portal}");
      var userId = Guid.Parse(User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value!);
      
      var result = await portalActor.Ask<ShortUrlCreatedMessage>(new CreateShortUrlMessage(request.OriginalUrl, userId));

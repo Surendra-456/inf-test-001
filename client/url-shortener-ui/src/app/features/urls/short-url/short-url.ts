@@ -58,7 +58,7 @@ export class ShortUrl {
       .subscribe({
         next: (response) => {
           console.log(response);
-          alert('Short URL created successfully.');
+  alert(`Short URL created successfully.\n\n${response.shortUrl}`);
           this.form.reset();
         },
         error: (err) => {

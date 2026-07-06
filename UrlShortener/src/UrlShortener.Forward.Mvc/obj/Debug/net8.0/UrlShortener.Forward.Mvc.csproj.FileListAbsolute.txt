@@ -16,6 +16,7 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.MvcApplicationPartsAssemblyInfo.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.RazorAssemblyInfo.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.RazorAssemblyInfo.cs
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\staticwebassets.build.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\staticwebassets.development.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\staticwebassets\msbuild.UrlShortener.Forward.Mvc.Microsoft.AspNetCore.StaticWebAssets.props
@@ -32,4 +33,3 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.genruntimeconfig.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\ref\UrlShortener.Forward.Mvc.dll
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.sourcelink.json

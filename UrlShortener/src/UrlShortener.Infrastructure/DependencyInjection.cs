@@ -14,8 +14,8 @@ public static class DependencyInjection
             options =>
                 options.UseSqlite(connectionString));
 
-        services.AddScoped<IShortUrlRepository,ShortUrlRepository>();
-        services.AddScoped<IUserRepository,UserRepository>();
+       services.AddTransient<IShortUrlRepository, ShortUrlRepository>();   
+       services.AddScoped<IUserRepository,UserRepository>();
         return services;
     }
 }
