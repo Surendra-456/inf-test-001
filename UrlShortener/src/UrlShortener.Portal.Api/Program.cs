@@ -10,6 +10,9 @@ using UrlShortener.Infrastructure.Persistence;
 using UrlShortener.Infrastructure.Repositories;
 using UrlShortener.Infrastructure.Services;
 using UrlShortener.Infrastructure;
+using UrlShortener.Portal.Api.Actors;
+using Akka.Actor;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,7 +44,36 @@ builder.Services.AddAkka(
                         "akka.tcp://UrlShortenerSystem@localhost:8110"
                     ]
                 });
+
+        akka.WithActors((system, registry) =>
+        {
+            var actor =
+                system.ActorOf(
+                    Props.Create(() =>
+                        new PortalActor(ActorRefs.Nobody)),
+                    "portal");
+
+            registry.Register<PortalActor>(
+                actor);
+        });
     });
+
+// builder.Services.AddAkka(
+//     "UrlShortenerSystem",
+//     akka =>
+//     {
+//         akka
+//             .WithRemoting("localhost", 8111)
+//             .WithClustering(
+//                 new ClusterOptions
+//                 {
+//                     Roles = ["portal"],
+//                     SeedNodes =
+//                     [
+//                         "akka.tcp://UrlShortenerSystem@localhost:8110"
+//                     ]
+//                 });
+//     });
 
 builder.Services
     .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -57,7 +89,7 @@ builder.Services
                 IssuerSigningKey =
                     new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(
-                            "SuperSecretJwtKey123456789"))
+                            "SuperSecretJwtKey12345678901234567890"))
             };
     });
 

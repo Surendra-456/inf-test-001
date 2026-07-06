@@ -32,3 +32,4 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.genruntimeconfig.cache
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\ref\UrlShortener.Forward.Mvc.dll
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forward.Mvc\obj\Debug\net8.0\UrlShortener.Forward.Mvc.sourcelink.json

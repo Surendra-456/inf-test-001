@@ -15,20 +15,22 @@ using Akka.Actor;
 public class UrlController : ControllerBase
 {
     private readonly IShortUrlRepository _urlRepo;
-    private readonly IActorRef _portalActor;
-    public UrlController(IShortUrlRepository urlRepo,IActorRef portalActor)
+    private readonly ActorSystem _actorSystem;
+    public UrlController(IShortUrlRepository urlRepo,ActorSystem actorSystem)
     {
         _urlRepo = urlRepo;
-        _portalActor=portalActor;
+        _actorSystem=actorSystem;
     }
 
     [HttpPost("short")]
     public async Task<IActionResult> AddShortUrl(CreateShortUrlRequest request)
     {        
       
+     var portalActor =_actorSystem.ActorSelection("/user/portal");
+
      var userId = Guid.Parse(User.Claims.First(x => x.Type == ClaimTypes.NameIdentifier).Value!);
      
-     var result = await _portalActor.Ask<ShortUrlCreatedMessage>(new CreateShortUrlMessage(request.OriginalUrl, userId));
+     var result = await portalActor.Ask<ShortUrlCreatedMessage>(new CreateShortUrlMessage(request.OriginalUrl, userId));
        return Ok(result);
 
     }

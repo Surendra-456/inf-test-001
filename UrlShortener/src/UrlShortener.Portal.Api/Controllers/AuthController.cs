@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using UrlShortener.Application.Interfaces;
 using UrlShortener.Domain.Entities;
 using UrlShortener.Portal.Api.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 [ApiController]
 [Route("api/auth")]
@@ -17,7 +19,7 @@ public class AuthController : ControllerBase
         _userRepo = userRepo;
         _jwt = jwt;
     }
-
+    [Authorize]
     [HttpPost("register")]
     public async Task<IActionResult> Register(RegisterRequest request)
     {

@@ -1,15 +1,68 @@
-<div class="container mt-3">
-  <form [formGroup]="form" (ngSubmit)="create()">
+<!-- Navbar -->
 
-    <div class="mb-3">
-      <label for="originalUrl" class="form-label">Original URL</label>
-      <input id="originalUrl" type="text" class="form-control" formControlName="originalUrl"
-        placeholder="https://test.com">
+<nav class="navbar">
+  <div class="nav-container">
+
+    <a class="brand" routerLink="/dashboard">
+      URLShortener
+    </a>
+
+    <div class="nav-links">
+
+      <a routerLink="/register">Register</a>
+
+      <a (click)="logout()">Logout</a>
     </div>
 
-    <button type="submit" class="btn btn-primary" [disabled]="form.invalid">
-      Create
-    </button>
+  </div>
+</nav>
 
-  </form>
+<!-- Form -->
+
+<div class="page-container">
+
+  <div class="card">
+
+    <h1>URL Shortener</h1>
+
+    <form
+      [formGroup]="form"
+      (ngSubmit)="create()">
+
+      <div class="form-group">
+
+        <label>Original URL</label>
+
+        <input
+          type="url"
+          formControlName="originalUrl"
+          placeholder="https://example.com">
+
+        @if (
+          form.get('originalUrl')?.invalid &&
+          form.get('originalUrl')?.touched
+        ) {
+          <small class="error">
+            Please enter a valid URL.
+          </small>
+        }
+
+      </div>
+
+      <button
+        type="submit"
+        [disabled]="form.invalid || isLoading">
+
+        @if (isLoading) {
+          <span class="spinner"></span>
+        }
+
+        {{ isLoading ? 'Creating...' : 'Create Short URL' }}
+
+      </button>
+
+    </form>
+
+  </div>
+
 </div>
