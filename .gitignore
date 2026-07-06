@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Angular
+dist/
+.angular/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# Logs
+*.log
