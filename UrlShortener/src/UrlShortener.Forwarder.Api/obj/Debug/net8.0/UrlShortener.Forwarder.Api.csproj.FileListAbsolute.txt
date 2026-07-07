@@ -1,11 +1,3 @@
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.csproj.AssemblyReference.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.AssemblyInfoInputs.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.AssemblyInfo.cs
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.csproj.CoreCompileInputs.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.MvcApplicationPartsAssemblyInfo.cs
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\appsettings.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\UrlShortener.Forwarder.Api.exe
@@ -92,6 +84,14 @@ C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\UrlShortener.Contracts.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\UrlShortener.Infrastructure.pdb
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\bin\Debug\net8.0\UrlShortener.Domain.pdb
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.csproj.AssemblyReference.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.AssemblyInfoInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.AssemblyInfo.cs
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.csproj.CoreCompileInputs.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\UrlShortener.Forwarder.Api.sourcelink.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Test\inf-test-001\UrlShortener\src\UrlShortener.Forwarder.Api\obj\Debug\net8.0\staticwebassets\msbuild.UrlShortener.Forwarder.Api.Microsoft.AspNetCore.StaticWebAssets.props

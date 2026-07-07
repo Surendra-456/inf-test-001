@@ -2,6 +2,9 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using UrlShortener.Forward.Mvc.Models;
 using UrlShortener.Forward.Mvc.Services;
+using  System.Net.Http.Json;
+using System.Net.Http.Headers;
+
 
 namespace UrlShortener.Forward.Mvc.Controllers;
 
@@ -22,12 +25,14 @@ public class HomeController : Controller
     [HttpGet]
     public IActionResult Login()
     {
+
         return View();
     }
-        [HttpPost]
+    [HttpPost]
     public async Task<IActionResult> Login(LoginRequest request)
     {
         var token = await _client.LoginAsync(request);
+        
 
         if (token == null)
         {
@@ -37,6 +42,8 @@ public class HomeController : Controller
         }
 
         HttpContext.Session.SetString( "JWT_TOKEN", token);
+        
+        _logger.LogInformation("Token stored in session");
 
         return RedirectToAction("Index","Home");
     }
@@ -49,7 +56,7 @@ public class HomeController : Controller
         return RedirectToAction("Login");
     }
 
-
+    
     [HttpGet]
     public IActionResult Index()
     {
@@ -57,9 +64,10 @@ public class HomeController : Controller
     }
     
     
-     [HttpPost]
+    [HttpPost]
     public async Task<IActionResult> Index(ForwardViewModel model)
     {
+        _logger.LogInformation("ShortUrl");
         var code =model.ShortUrl.Split('/').Last();
 
         var destinationUrl =await _client.GetDestinationUrl(code);
@@ -67,10 +75,11 @@ public class HomeController : Controller
        if (string.IsNullOrWhiteSpace(destinationUrl))
         {
             ModelState.AddModelError("","Short URL not found.");
-
+            _logger.LogInformation("Invalid Short Url");
             return View(model);
         }
-        
+       _logger.LogInformation("valid Destination Url");
+
         return Redirect(destinationUrl);
 
     }
