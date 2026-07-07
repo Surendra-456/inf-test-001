@@ -7,19 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Akka.Cluster" Version="1.5.69" />
-    <PackageReference Include="Akka.Cluster.Hosting" Version="1.5.69" />
-    <PackageReference Include="Akka.Hosting" Version="1.5.69" />
-    <PackageReference Include="Akka.Remote" Version="1.5.69" />
-    <PackageReference Include="Akka.Remote.Hosting" Version="1.5.69" />
-
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.28" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.22" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\UrlShortener.Application\UrlShortener.Application.csproj" />
     <ProjectReference Include="..\UrlShortener.Contracts\UrlShortener.Contracts.csproj" />
+    <ProjectReference Include="..\UrlShortener.Infrastructure\UrlShortener.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

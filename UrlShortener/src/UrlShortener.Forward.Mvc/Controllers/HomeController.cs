@@ -18,6 +18,37 @@ public class HomeController : Controller
 
     }
 
+    
+    [HttpGet]
+    public IActionResult Login()
+    {
+        return View();
+    }
+        [HttpPost]
+    public async Task<IActionResult> Login(LoginRequest request)
+    {
+        var token = await _client.LoginAsync(request);
+
+        if (token == null)
+        {
+            ModelState.AddModelError("","Invalid credentials");
+
+            return View(request);
+        }
+
+        HttpContext.Session.SetString( "JWT_TOKEN", token);
+
+        return RedirectToAction("Index","Home");
+    }
+    
+    [HttpPost]
+    public IActionResult Logout()
+    {
+        HttpContext.Session.Remove("JWT_TOKEN");
+
+        return RedirectToAction("Login");
+    }
+
 
     [HttpGet]
     public IActionResult Index()

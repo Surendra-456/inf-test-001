@@ -10,6 +10,7 @@ using UrlShortener.Infrastructure;
 using UrlShortener.Infrastructure.Services;
 using UrlShortener.Portal.Api.Actors;
 using UrlShortener.Application.Interfaces;
+using UrlShortener.Portal.Api.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -92,6 +93,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("Angular");
+
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 app.UseAuthentication();
 app.UseAuthorization();

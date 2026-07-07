@@ -1,0 +1,62 @@
+@model UrlShortener.Forward.Mvc.Models.LoginRequest
+
+@{
+    
+    
+    Layout = "_LoginLayout";
+    ViewData["Title"] = "Login";
+}
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-6">
+
+            <div class="card shadow">
+
+                <div class="card-body">
+
+                    <h2 class="text-center mb-4">
+                        Login
+                    </h2>
+
+                    
+                    <form method="post">
+                        <div class="mb-3">
+
+                            <label asp-for="Email" class="form-label">
+                                Email:
+                            </label>
+
+                            <input asp-for="Email" class="form-control"/>
+
+                        </div>
+                        <div class="mb-3">
+
+                            <label asp-for="Password" class="form-label">
+                                Password:
+                            </label>
+
+                            <input asp-for="Password" class="form-control"/>
+
+                        </div>    
+                        <button type="submit" class="btn btn-primary w-100">
+                            Submit
+                        </button>
+
+                    </form>
+
+                    <div asp-validation-summary="All"
+                         class="text-danger mt-3">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

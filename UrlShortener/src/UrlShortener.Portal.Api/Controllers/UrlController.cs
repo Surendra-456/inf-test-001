@@ -15,11 +15,9 @@ using UrlShortener.Contracts;
 [Route("api/url")]
 public class UrlController : ControllerBase
 {
-    private readonly IShortUrlRepository _urlRepo;
     private readonly ActorSystem _actorSystem;
     public UrlController(IShortUrlRepository urlRepo,ActorSystem actorSystem)
     {
-        _urlRepo = urlRepo;
         _actorSystem=actorSystem;
     }
 
