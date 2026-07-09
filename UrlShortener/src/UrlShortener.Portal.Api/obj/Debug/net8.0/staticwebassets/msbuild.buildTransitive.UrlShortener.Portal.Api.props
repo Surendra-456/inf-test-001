@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\UrlShortener.Portal.Api.props" />
-</Project>

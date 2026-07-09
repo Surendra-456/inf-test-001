@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\UrlShortener.Portal.Api.props" />
-</Project>
