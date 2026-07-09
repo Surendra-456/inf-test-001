@@ -12,8 +12,8 @@ dist/
 
 # Visual Studio
 .vs/
-bin/
-obj/
+**/bin/
+**/obj/
 
 # Logs
 *.log
