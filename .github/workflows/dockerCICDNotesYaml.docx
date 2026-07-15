@@ -1,0 +1,112 @@
+
+# Name displayed in the GitHub Actions tab
+name: Build Test and Docker
+
+# Events that trigger the workflow
+on:
+
+  # Run workflow whenever code is pushed to main branch
+  push:
+    branches:
+      - main
+
+  # Run workflow when a Pull Request is created/updated against main
+  pull_request:
+    branches:
+      - main
+
+# Define all jobs in this workflow
+jobs:
+
+  # Job 1: Build and Test the .NET solution
+  build-test:
+
+    # Create a temporary Ubuntu VM to execute the job
+    runs-on: ubuntu-latest
+
+    # Default working directory for all run commands
+    defaults:
+      run:
+        working-directory: UrlShortener
+
+    # Steps executed sequentially
+    steps:
+
+      # Download repository source code onto the runner
+      - uses: actions/checkout@v4
+
+      # Install .NET 8 SDK
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      # Download all NuGet dependencies/packages
+      - name: Restore
+        run: dotnet restore UrlShortener.sln
+
+      # Compile the solution in Release mode
+      # --no-restore skips package restore because it already happened above
+      - name: Build
+        run: dotnet build UrlShortener.sln --configuration Release --no-restore
+
+      # Execute all test projects in the solution
+      # --no-build skips rebuilding because build already completed
+      - name: Test
+        run: dotnet test UrlShortener.sln --configuration Release --no-build
+
+  # Job 2: Build and Push Docker Image
+  docker:
+
+    # Execute this job only if build-test succeeds
+    needs: build-test
+
+    # Create another Ubuntu VM for Docker operations
+    runs-on: ubuntu-latest
+
+    # Required permissions
+    permissions:
+
+      # Allow reading repository contents
+      contents: read
+
+      # Allow pushing images to GitHub Container Registry (GHCR)
+      packages: write
+
+    steps:
+
+      # Download repository source code again
+      # Each job runs on a fresh machine
+      - uses: actions/checkout@v4
+
+      # Authenticate with GitHub Container Registry
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+
+          # GitHub Container Registry URL
+          registry: ghcr.io
+
+          # Current GitHub username
+          username: ${{ github.actor }}
+
+          # Temporary GitHub token generated for this workflow
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Build Docker image and push it to GHCR
+      - name: Build and Push Image
+        uses: docker/build-push-action@v6
+        with:
+
+          # Build context (root of repository)
+          context: .
+
+          # Location of Dockerfile
+          file: ./UrlShortener/src/UrlShortener.Portal.Api/Dockerfile
+
+          # Push image after successful build
+          push: true
+
+          # Docker image name and tag
+          # Example:
+          # ghcr.io/surendra-456/inf-test-001/portal-api:latest
+          tags: ghcr.io/${{ github.repository }}/portal-api:latest
